@@ -11,7 +11,7 @@ proc read_file {_input_file_path} {
     return $_data
 }
 
-set _freq_diffs [regsub "\n" [read_file "d1p2.txt"] ""]
+set _freq_diffs [regsub "\n" [read_file "day1.txt"] ""]
 
 set _mytext "your sum frequency is: "
 lappend _mytext [expr $_freq_diffs]
