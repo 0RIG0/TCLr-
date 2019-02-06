@@ -21,7 +21,6 @@ set _mytext "your sum frequency is: "
 lappend _mytext [expr $_freq_diffs]
 puts $_mytext
 
-#part2 begins
 
 proc part2 {freqs startFreq input} {
   dict set freqs $startFreq 1
