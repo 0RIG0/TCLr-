@@ -11,4 +11,17 @@ if {false} {
 	checksum and compare it to what your device predicts.
 }
 
+set _file [open "day2.txt" r]
+set _input [read $_file]
+close $_file
+# Match the first substring with lowercase letters only
+#
+join $_input ","
+#set result [regexp {[A-Za-z]+} $_input match] ;#all letters (uppercase and lowercase)
+#puts "Result: $result match: $match" ;# prints out Result: 1 match: fzostwblnqkhpuzxirnevmaycq
 
+puts [expr {[llength [split $_input "a"]] - 1}] ;#prints out that there are 252 a's
+puts "there are :[expr {[llength [split $_input "a"]] - 1}] number of a'ss in the box ids"
+#puts "first occurance of $s2 in $_input"
+#puts [string first  $s2 $_input] ;#prints out at index 22 line 1
+#want to find ALL occurances of a in my text file
